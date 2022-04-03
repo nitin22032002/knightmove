@@ -3,7 +3,7 @@ function App() {
   return (
     <div>
       <div className="main-heading">
-              Posible Knight Move's 
+              Possible Knight Move's 
       </div>
       <ChessBoard/>
     </div>

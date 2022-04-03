@@ -36,7 +36,7 @@ function GenerateChessBlock(){
                        <div className='horizontal'>
                         {arr.map((j)=>{
                             return(
-                                <div className={`block ${(parseInt(getSelected.i)===i && parseInt(getSelected.j)===j)?"selected":JSON.parse(getPosible).includes(`${i},${j}`)?"possible":""}`}  onClick={(e)=>{handleClick(i,j,e)}}>{(parseInt(getSelected.i)===i && parseInt(getSelected.j)===j)?"S":JSON.parse(getPosible).includes(`${i},${j}`)?"P":""}</div>
+                                <div className={`block ${i%2===0?j%2===0?"light":"dark":j%2!==0?"light":"dark"} ${(parseInt(getSelected.i)===i && parseInt(getSelected.j)===j)?"selected":JSON.parse(getPosible).includes(`${i},${j}`)?"possible":""}`}  onClick={(e)=>{handleClick(i,j,e)}}>{(parseInt(getSelected.i)===i && parseInt(getSelected.j)===j)?"S":JSON.parse(getPosible).includes(`${i},${j}`)?"P":""}</div>
                             )
                         })}
                         </div>

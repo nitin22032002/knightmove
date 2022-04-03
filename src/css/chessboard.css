@@ -35,12 +35,19 @@
 .block{
    width:12.5%;
    height: 100%;
-   border: 1px solid black;
-   background-color: rgb(148, 114, 71);
+   border: 1px solid black;  
    cursor: pointer;
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.dark{
+    background-color: rgb(148, 114, 71);
+}
+
+.light{
+    background-color: whitesmoke;
 }
 
 .main-heading{
